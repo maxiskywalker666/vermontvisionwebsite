@@ -1,0 +1,13 @@
+#container { }
+#logoVermontVision {
+    width: auto;
+    height: 100px;
+    border: solid 2px black;}
+#carte {
+    width: auto;
+    height: 600;
+    border: solid 2px black;}
+#timeLine {
+    width: auto;
+    height: 280px;
+    border: solid 2px black;}
