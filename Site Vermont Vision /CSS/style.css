@@ -1,13 +1,19 @@
-#container { }
+#container { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 #logoVermontVision {
     width: auto;
     height: 100px;
     border: solid 2px black;}
 #carte {
+    flex-grow: 1;
     width: auto;
-    height: 600;
     border: solid 2px black;}
 #timeLine {
+    justify-content: flex-end;
+    margin-bottom: 0;
     width: auto;
     height: 280px;
     border: solid 2px black;}
