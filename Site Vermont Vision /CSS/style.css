@@ -17,3 +17,10 @@
     width: auto;
     height: 280px;
     border: solid 2px black;}
+#vermontView{
+    flex-grow: 1;
+    max-height: 100%;
+    max-width:  100%;
+    height: auto;
+    width: auto;
+}
