@@ -18,6 +18,10 @@
 #vermontView {
     max-height:100%;
     max-width: 100%;
+    /* image resized to fiully fill the div */
+    width:100%;
+    height:100%;
+    
 }
 
 #timeLine {
