@@ -1,33 +1,28 @@
 #container { 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-#logoVermontVision {
-    width: auto;
-    height: 100px;
-    border: solid 2px black;
-    background-color: black;
 
 }
+
+#logoVermontVision {
+	background-color: black;
+	height: 20vh;
+	min-height: 100px;
+}
+
 #carte {
-    flex-grow: 1;
-    width: auto;
-    border: solid 2px black;
-    
+	box-sizing: border-box;
+	height: 50vh;
+	width: 100vw;
+	text-align: center;
 }
+
+#vermontView {
+    max-height:100%;
+    max-width: 100%;
+}
+
 #timeLine {
-    bottom: 0;
-    padding-top: 20px;
-    width: auto;
-    height: 280px;
-    border: solid 2px black;
-    justify-content: flex-end;
+	background-color: black;
+	height: 30vh;
+	min-height: 200px;
 }
-#vermontView{
-    flex-grow: 1;
-    max-height: 100%;
-    max-width:  100%;
-    height: auto;
-    width: auto;
-}
+
