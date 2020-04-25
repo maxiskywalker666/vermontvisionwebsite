@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+Site Vermont Vision /.DS_Store
+
+Site Vermont Vision /IMAGES/.DS_Store
