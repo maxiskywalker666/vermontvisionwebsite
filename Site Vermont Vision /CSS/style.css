@@ -1,13 +1,13 @@
 /* STRUCTURE */
 
 #container { 
-
+	
 }
 
 #logoVermontVision {
 	background-color: black;
 	height: 5vh;
-	/*min-height: 100px;*/
+	min-height: 70px;
 }
 
 #logoVermontVision h1 {
@@ -22,7 +22,7 @@
 	height: 65vh;
 	width: 100vw;
 	text-align: center;
-	background-color: black;
+	background-color: white;
 }
 
 #vermontView {
@@ -35,10 +35,31 @@
 }
 
 #timeLine {
+	box-sizing: border-box;
 	background-color: black;
 	height: 30vh;
 	min-height: 200px;
 }
 
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: red;
+}
 
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
 
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: red !important;
+  width: 0%;
+}

@@ -6,20 +6,58 @@
     </head>
     <body>
         <div id="container">
+            <!-- TOP BAR -->
             <div id="logoVermontVision">
                 <h1>VERMONT VISION</h1>
             </div>
+            <!-- MAP -->
             <div id="carte">
                 <img id="vermontView" src="IMAGES/example.gif" alt="vue satelite du Vermont">
             </div>
+            <!-- TIMELINE -->
             <div id="timeLine">
-                
+            	<div class="flex-parent">
+					<div class="input-flex-container">
+						<div class="input">
+							<span data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT"></span>
+							BIENVENU DANS LE VERMONT
+						</div>
+						<div class="input active">
+							<span data-year="28.04.2020" data-info="SUDDEN EFFECT - VERMONT TALES"></span>
+							SUDDEN EFFECT - VERMONT TALES
+						</div>
+						<div class="input">
+							<span data-year="06.05.2020" data-info="MALADE IMAGINAIRE & DJ REQUEST - MARS 0">
+							MALADE IMAGINAIRE & DJ REQUEST - MARS 0
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="header">
+				  <div class="progress-container">
+				    <div class="progress-bar" id="myBar"></div>
+				  </div>
+				</div>
             </div>
         </div>
+
+
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+		<!-- script timeline -->
+		<script>
+			// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
     </body>
 </html>
