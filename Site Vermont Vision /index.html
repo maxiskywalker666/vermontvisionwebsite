@@ -16,11 +16,41 @@
             </div>
             <!-- TIMELINE -->
             <div class="header">
-				  <div class="progress-container">
-				    <div class="progress-bar" id="myBar"></div>
-				  </div>
+				<div class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
 				</div>
+			</div>
             <div id="timeLine">
+				<div class="input">
+					<p data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT">
+						BIENVENU DANS LE VERMONT
+					</p>
+				</div>
+				<div class="input active">
+					<p data-year="28.04.2020" data-info="SUDDEN EFFECT - VERMONT TALES">
+						SUDDEN EFFECT - VERMONT TALES
+					</p>
+				</div>
+				<div class="input">
+					<p data-year="06.05.2020" data-info="MALADE IMAGINAIRE & DJ REQUEST - MARS 0">
+						MALADE IMAGINAIRE & DJ REQUEST - MARS 0
+					</p>
+				</div>
+				<div class="input">
+					<p data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT">
+						BIENVENU DANS LE VERMONT
+					</p>
+				</div>
+				<div class="input active">
+					<p data-year="28.04.2020" data-info="SUDDEN EFFECT - VERMONT TALES">
+						SUDDEN EFFECT - VERMONT TALES
+					</p>
+				</div>
+				<div class="input">
+					<p data-year="06.05.2020" data-info="MALADE IMAGINAIRE & DJ REQUEST - MARS 0">
+						MALADE IMAGINAIRE & DJ REQUEST - MARS 0
+					</p>
+				</div>
 				<div class="input">
 					<p data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT">
 						BIENVENU DANS LE VERMONT
@@ -49,12 +79,18 @@
 		<!-- script timeline -->
 		<script>
 			// When the user scrolls the page, execute myFunction 
-			document.getElementById("timeLine").onscroll = function() {myFunction()};
+			document.getElementById("timeLine").onscroll = function() {horizontalProgress()};
 
-			function myFunction() {
+			function verticalProgress() {
 			  var winScroll = document.getElementById("timeLine").scrollTop;
 			  var height = document.getElementById("timeLine").scrollHeight - document.getElementById("timeLine").clientHeight;
 			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+			function horizontalProgress() {
+			  var winScroll = document.getElementById("timeLine").scrollLeft;
+			  var width = document.getElementById("timeLine").scrollWidth - document.getElementById("timeLine").clientWidth;
+			  var scrolled = (winScroll / width) * 100;
 			  document.getElementById("myBar").style.width = scrolled + "%";
 			}
 		</script>

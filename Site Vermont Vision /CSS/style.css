@@ -1,7 +1,8 @@
 /* STRUCTURE */
 
 #container { 
-	
+  	margin:0;
+  	padding:0;	
 }
 
 #logoVermontVision {
@@ -19,7 +20,7 @@
 
 #carte {
 	box-sizing: border-box;
-	height: 65vh;
+	height: 61.5vh;
 	width: 100vw;
 	text-align: center;
 	background-color: white;
@@ -35,26 +36,25 @@
 }
 
 #timeLine {
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 	background-color: black;
-	height: 30vh;
-	margin: auto;
-	width: 98vw;
+	height: 29vh;
+	/*width: 100%;*/
 	overflow-x: scroll;
-	/*text-align: center;*/
-	
+	display: flex;
+  	align-items: stretch;
 }
 
 .input {
-	margin: auto;
+	/*margin: auto;*/
 	display: inline-block;
-	width: 200px;
 	height: 100px;
-	line-height: 100px;
 	border: 1px solid white;
 	text-align: center;
-	margin-left: 300px;
-	margin-top: 5vh;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .input p {
@@ -75,13 +75,13 @@
 /* The progress container (grey background) */
 .progress-container {
 	width: 100%;
-	height: 8px;
+	height: 1vh;
 	background: #ccc;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-	height: 8px;
+	height: 1vh;
 	background: red !important;
 	width: 0%;
 }
