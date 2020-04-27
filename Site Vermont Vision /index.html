@@ -15,29 +15,28 @@
                 <img id="vermontView" src="IMAGES/example.gif" alt="vue satelite du Vermont">
             </div>
             <!-- TIMELINE -->
-            <div id="timeLine">
-            	<div class="flex-parent">
-					<div class="input-flex-container">
-						<div class="input">
-							<span data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT"></span>
-							BIENVENU DANS LE VERMONT
-						</div>
-						<div class="input active">
-							<span data-year="28.04.2020" data-info="SUDDEN EFFECT - VERMONT TALES"></span>
-							SUDDEN EFFECT - VERMONT TALES
-						</div>
-						<div class="input">
-							<span data-year="06.05.2020" data-info="MALADE IMAGINAIRE & DJ REQUEST - MARS 0">
-							MALADE IMAGINAIRE & DJ REQUEST - MARS 0
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="header">
+            <div class="header">
 				  <div class="progress-container">
 				    <div class="progress-bar" id="myBar"></div>
 				  </div>
 				</div>
+            <div id="timeLine">
+				<div class="input">
+					<p data-year="20.04.2020" data-info="BIENVENU DANS LE VERMONT">
+						BIENVENU DANS LE VERMONT
+					</p>
+				</div>
+				<div class="input active">
+					<p data-year="28.04.2020" data-info="SUDDEN EFFECT - VERMONT TALES">
+						SUDDEN EFFECT - VERMONT TALES
+					</p>
+				</div>
+				<div class="input">
+					<p data-year="06.05.2020" data-info="MALADE IMAGINAIRE & DJ REQUEST - MARS 0">
+						MALADE IMAGINAIRE & DJ REQUEST - MARS 0
+					</p>
+				</div>
+				
             </div>
         </div>
 
@@ -50,11 +49,11 @@
 		<!-- script timeline -->
 		<script>
 			// When the user scrolls the page, execute myFunction 
-			window.onscroll = function() {myFunction()};
+			document.getElementById("timeLine").onscroll = function() {myFunction()};
 
 			function myFunction() {
-			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var winScroll = document.getElementById("timeLine").scrollTop;
+			  var height = document.getElementById("timeLine").scrollHeight - document.getElementById("timeLine").clientHeight;
 			  var scrolled = (winScroll / height) * 100;
 			  document.getElementById("myBar").style.width = scrolled + "%";
 			}
